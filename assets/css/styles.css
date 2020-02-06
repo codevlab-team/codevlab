@@ -256,13 +256,20 @@ li.nav-item {
 
 .leading-paragraph {
     max-width: 600px;
-    border: solid 30px rgba(255, 255, 255, 0.054);
+    border: solid 15px rgba(255, 255, 255, 0.054);
     border-top-color: rgba(97, 0, 0, 0.341);
     outline: solid 50px rgba(255, 255, 255, 0.024);
-    padding: 1rem;
+    padding: .5rem;
     margin-left: auto;
     margin-right: auto;
     color: #b9b9b9;
+}
+
+@media screen and (min-width: 576px) {
+    .leading-paragraph {
+        border-width: 30px;
+        padding: 1rem;
+    }
 }
 
 .leading-paragraph strong {
@@ -295,10 +302,14 @@ footer.footer {
     font-weight: bold;
     outline: none;
     letter-spacing: 1px;
-    display: inline-flex;
+    /* display: inline-flex;
     justify-content: center;
-    align-items: center;
-    /* transition: all 200ms ease; */
+    align-items: center; */
+}
+
+.button .button-icon, .button .button-text {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .button .button-icon {

@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font: 400 16px/1.5 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1, .h1 {
+    font-size: 2.5rem;
+}
+
+h2, .h2 {
+    font-size: 2rem;
+}
+
+h3, .h3 {
+    font-size: 1.75rem;
+}
+
+h4, .h4 {
+    font-size: 1.5rem;
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+}
+
+h6, .h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.display-1 {
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-2 {
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-3 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-4 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.wrapper {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    overflow: hidden;
+}
+
+.wrapper-container {
+    height: 100%;
+    padding: 4rem;
+}
+
+.inner-wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 80px 1fr 80px;
+    background-color: rgba(0, 0, 0, 0.705);
+    border-radius: 3px;
+}
+
+.particles-wrapper {
+    height: calc(100vh - 20%);
+    width: calc(100vw - 60%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* navigation menu */
+
+.nav {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ul.nav-item-group {
+    list-style-type: none;
+}
+
+li.nav-item {
+    display: inline-block;
+}
+
+li.nav-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+li.nav-item a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+}
+
+li.nav-item a:hover {
+    color: #d4d4d4;
+}
+
+/* content */
+
+.hero-content {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    border-left: solid 1px #e2e2e2;
+}
+
+.leading-title, .leading-paragraph {
+    margin-bottom: 2rem;
+}
+
+.leading-title {
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+footer.footer {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 80%;
+    border-top: solid 1px #e2e2e2;
+}
+
+/* UI */
+
+.button {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 90%;
+    background-color: #0bc9b6;
+    border: solid 1px #0bc9b6;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 300ms ease;
+}
+
+.button:hover {
+    background-color: #0baa9a;
+    cursor: pointer;
+}
+
+/* Aux */
+
+.axbl {
+    height: calc(100vh - -20%);
+    width: calc(100vw - 30%);
+    position: absolute;
+    left: -180px;
+    bottom: -500px;
+    z-index: 0;
+    background-color: rgba(17, 57, 52, 0.514);
+    transform: rotate(45deg);
+}
+
+.axtr {
+    height: calc(100vh - 40%);
+    width: calc(100vw - 33%);
+    position: absolute;
+    right: -323px;
+    top: -244px;
+    z-index: 0;
+    background-color: rgba(17, 57, 52, 0.514);
+    transform: rotate(45deg);
+}
